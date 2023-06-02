@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fontawesome cdn to add icons in navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <!-- navigation bar -->
+        <div id="navbar">
+            <div id="toggle-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="nav-menu">
+                <!-- home -->
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <!-- about -->
+                <a href="about.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>About</span>
+                </a>
+                <!-- contact -->
+                <a href="contact.html">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>Contact</span>
+                </a>
+                <!-- portfolio-->
+                <a href="skills.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Skills</span>
+                     
+                </a>
+                <!-- projects -->
+                <a href="projects.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Projects</span>
+                </a>
+            
+
+            </div>
+        </div>
+
+
+        <!-- home page -->
+        <div id="home">
+            <div id="image-section">
+                <div id="image">
+                    <div id="image-shadow"></div>
+                    <img src="images/mydp.jpeg" alt="profile image">
+                </div>
+            </div>
+
+            <!-- home detail -->
+            <div id="detail-section">
+                <div id="box">
+                    <h2>I'm Bilal Mohammed<br><span>Web Developer</span></h2><br>
+                    <p>I am a Student at Lambton College in Toronto pursuing
+                        MERN stack course. I aspire to become a web developer. I have
+                        3 years of experience in IT Industry.
+                    </p>
+
+                    <a href="resources/Bilal Resume by ccbp.pdf" target="_blank"><button>View CV</button></a>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="footer-content">
+              <span class="footer-icon">&copy;</span>
+              <span class="footer-text">Created by Bilal Mohammed in 2023. All rights reserved.</span>
+            </div>
+          </footer>
+          
+
+    </div>    
+     
+     
+
+           
+  
+
+
+   <script>
+        let toggle_nav = document.querySelector("#toggle-nav");
+        let nav_menu = document.querySelector("#nav-menu");
+        let list = nav_menu.querySelectorAll("a");
+
+
+        toggle_nav.addEventListener("click", () => {
+            if (toggle_nav.classList != "show") {
+                toggle_nav.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+                toggle_nav.classList.add("show");
+                nav_menu.style.display = "block";
+            } else {
+                toggle_nav.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+                toggle_nav.classList.remove("show");
+                nav_menu.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>

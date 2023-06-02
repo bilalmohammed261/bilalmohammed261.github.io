@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilal's Portfolio</title>
+    <link rel="stylesheet" href="css/main.css">
+    <!-- fontawesome cdn to add icons in navbar -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+    <div id="container">
+        <!-- navigation bar -->
+        <div id="navbar">
+            <div id="toggle-nav">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <div id="nav-menu">
+                <!-- home -->
+                <a href="index.html">
+                    <i class="fa-solid fa-house"></i>
+                    <span>Home</span>
+                </a>
+
+                <!-- about -->
+                <a href="about.html">
+                    <i class="fa-solid fa-user"></i>
+                    <span>About</span>
+                </a>
+                <!-- contact -->
+                <a href="contact.html">
+                    <i class="fa-solid fa-address-card"></i>
+                    <span>Contact</span>
+                </a>
+                <!-- skills-->
+                <a href="skills.html">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Skills</span>
+                     
+                </a>
+                <!-- projects -->
+                <a href="projects.html">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span>Projects</span>
+                </a>
+            
+
+            </div>
+        </div>
+
+
+            <!-- projects -->
+    <div id="blogs">
+        <div class="header">
+            MY <span>PROJECTS</span>
+        </div>
+
+        <div id="posts-container">
+            <!-- Project -->
+            <a href="https://bilaltodos.ccbp.tech/">
+            <div class="post">
+                <div class="post-cover">
+                    <img src=https://lh3.googleusercontent.com/-6v4V0Vobchk/YbBUKE2yMjI/AAAAAAAAKy4/FspYuVVndfkmlv0Gp5ppFHPN3pRB7fi_wCNcBGAsYHQ/w640-h351/image.png" alt="">
+                </div>
+                <h2>Todo List project.</h2>
+                <p>Developed persistent todo application with CRUD operations to track list of tasks
+                    using  HTML, CSS, JS, Bootstrap.
+
+                </p>
+            </div>
+        </a>
+
+            <!-- Project -->
+            <a href="https://bilaltourism.ccbp.tech/">
+            <div class="post">
+                <div class="post-cover">
+                    <img src="https://media.licdn.com/dms/image/C4E12AQFQ4ISIrX0qvg/article-cover_image-shrink_600_2000/0/1651390096953?e=2147483647&v=beta&t=4dQJIv51E2kwnm-3rcDWKUgslpRWXofuRepVs7OC_LE" alt="">
+                </div>
+                <h2>Static Tourism Website</h2>
+                <p>Developed a static tourism website where users can browse through the content, videos and images of popular
+                    destinations using HTML, CSS, Bootstrap.
+                    
+                    </p>
+            </div>
+</a>
+            <!-- Project -->
+            <a href="https://bilalecommerce.ccbp.tech/">
+
+            <div class="post">
+                <div class="post-cover">
+                    <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/ecommerce-website-logo-img.png" alt="">
+                </div>
+                <h2>Static Ecommerce Website</h2>
+                <p>Developed E Commerce website where users can go through different products, detailed information about a
+                    product, offers and contact us info using HTML, CSS, Bootstrap. Responsive nature was achieved through bootstrap grid system.
+                    </p>
+            </div>
+            </a>
+
+ 
+
+        </div>
+    </div>
+        <footer class="footer">
+            <div class="footer-content">
+              <span class="footer-icon">&copy;</span>
+              <span class="footer-text">Created by Bilal Mohammed in 2023. All rights reserved.</span>
+            </div>
+          </footer>
+          
+    </div>    
+
+        
+
+     
+     
+
+           
+  
+
+
+   <script>
+        let toggle_nav = document.querySelector("#toggle-nav");
+        let nav_menu = document.querySelector("#nav-menu");
+        let list = nav_menu.querySelectorAll("a");
+
+
+        toggle_nav.addEventListener("click", () => {
+            if (toggle_nav.classList != "show") {
+                toggle_nav.innerHTML = `<i class="fa-solid fa-xmark"></i>`;
+                toggle_nav.classList.add("show");
+                nav_menu.style.display = "block";
+            } else {
+                toggle_nav.innerHTML = `<i class="fa-solid fa-bars"></i>`;
+                toggle_nav.classList.remove("show");
+                nav_menu.style.display = "none";
+            }
+        })
+    </script>
+</body>
+</html>
